@@ -1,37 +1,43 @@
-György Norbert
-AY4MBA
-Webprogramozás - számonkérés
-Ezt a megoldást a fent írt hallgató küldte be és készítette a Webprogramozás kurzus számonkéréséhez.
-Kijelentem, hogy ez a megoldás a saját munkám. Nem másoltam vagy használtam harmadik féltől
-származó megoldásokat. Nem továbbítottam megoldást hallgatótársaimnak, és nem is tettem közzé.
-Az Eötvös Loránd Tudományegyetem Hallgatói Követelményrendszere
-(ELTE szervezeti és működési szabályzata, II. Kötet, 74/C. §) kimondja, hogy mindaddig,
-amíg egy hallgató egy másik hallgató munkáját - vagy legalábbis annak jelentős részét -
-saját munkájának mutatja be, az fegyelmi vétségnek számít.
-A fegyelmi vétség legsúlyosabb következménye a hallgató elbocsátása az egyetemről.
+# Railways
 
-Minimálisan teljesítendő (8 pont)
+Railways is a web-based game that simulates railway management and operations. The project is designed to be interactive, customizable, and visually engaging.
 
-  - [x] Kötelező: A kiinduló állományban lévő readme fájl kitöltése (Nyilatkozat, teljesített pontok) (0 pont)
-  - [x] Kötelező: A játékot egy HTML fájl segítségével, keretrendszerek használata nélkül készítette el. (0 pont)
-  - [x] Kötelező: A megoldás során teljesen elkerülte a `bad practice` pontban megadott gyakorlatokat. (0 pont)
-  - [x] Menü: A főmenüben a megfelelő elemek megjelennek: név megadásának mezője, nehézség választó elem, start gomb (1 pont)
-  - [x] Menü: A Start Gombra való kattintáskor átkerülünk a játéktér képernyőjére. (1 pont)
-  - [x] Menü: A menüből elérhető a játékszabály leírása. (1 pont)
-  - [x] Játéktér: A játéktéren megjelenik a játékos neve, és elindul a megjelenített időzítő (1 pont)
-  - [x] Játéktér: A játéktéren megjelenik a nehézségi szintnek megfelelő pályák közül egy véletlenszerűen kiválasztott pálya, és a rajta lévő összes elemtípus (3 pont)
-  - [x] Lehelyezés: A pályán lévő mezőkre le tudom helyezni a különböző típusú elemeket (2 pont).
+## Features
 
-Alap feladatok (12 pont)
+- **Interactive Gameplay:** Engage in a dynamic railway-themed game implemented using HTML, CSS, and JavaScript.
+- **Customizable Maps:** Modify the `maps.json` file to create and play on different railway layouts.
+- **Visual Assets:** Utilizes images stored in the `pics` directory to enhance the gaming experience.
 
-  - [x] Lehelyezés: Az elemeket szabályosan tudom lehelyezni. (Hídon csak egyenesen, Hegynél csak 90°-ban, Oázisra pedig nem tudunk lehelyezni semmit, üres mezőre bármilyet) (4 pont)
-  - [3/4] Ellenőrzés: A játék ellenőrzi, hogy megoldottuk-e a feladványt. Tehát azt, hogy: minden mezőt, amit lehet csak egyszer érint; körbeér az útvonal; minden mezőből át lehet jutni a megfelelő szomszédos mezőbe; mindenhol a megfelelő elem szerepel (4 pont)
-  - [x] Játék vége: A játék végén látjuk, hogy mennyi idő alatt teljesítettük a pályát. (1 pont)
-  - [x] Toplista: A játék végén megjelenik a toplista, hogy az adott nehézségű pályát kinek mennyi idő alatt sikerült teljesítenie (2 pont)
-  - [x] Egyéb: igényes kinézet és kódszervezés (1 pont)
+## Installation
 
-Plusz feladatok (5 pont)
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/gyorgynorbert/railways.git
+   ```
 
-  - [ ] Mentés: A játék állapota játék közben elmenthető, az oldal újra megnyitása után visszatölthető a legutóbb mentett állapot (1 pont)
-  - [x] Mentés: A toplisták LocalStorageban elmentődnek, az oldal újratöltése után is elérhetőek (2 pont)
-  - [ ] Elemek lehelyezése: pályarajzolás vonalhúzással (egérgombot lenyomva tartva mozogni a cellákon) (2 pont)
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd railways
+   ```
+
+3. **Open `index.html` in Your Preferred Web Browser:**
+   Simply double-click the `index.html` file or use your browser's "Open File" option.
+
+## Usage
+
+- **Starting the Game:** Launch the `index.html` file in a web browser to begin playing.
+- **Customizing Maps:** Edit the `maps.json` file to design new railway configurations. Ensure the JSON structure remains valid to avoid errors.
+- **Styling and Scripts:** Modify `style.css` for visual changes and `script.js` to alter game mechanics or add new features.
+
+## Project Structure
+
+- `index.html`: The main HTML file that initializes and displays the game.
+- `style.css`: Contains all the styling rules for the game's appearance.
+- `script.js`: Holds the JavaScript code responsible for the game's functionality and interactivity.
+- `maps.json`: A JSON file defining the various railway maps available in the game.
+- `pics/`: Directory containing image assets used within the game.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
