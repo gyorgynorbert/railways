@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Railways</title>
+</head>
+<body>
+    <div id="menu-wrapper">
+        <div id="menu-container">
+            <div id="menu-options"> 
+                <div id="logo-container"><img src="./pics/screens/title.png" alt="title" class="title-image"></div>
+                <input type="text" id="player-name" placeholder="ADD MEG A NEVED!">
+                <div id="menu-options-lower">
+                    <div id="menu-difficulty-chooser">
+                        <p class="text">ÁLLÍTSD BE A NEHÉZSÉGET!</p>
+                        <div id="menu-level-hardness">
+                            <button id="easy" class="btn">5X5</button>
+                            <button id="hard" class="btn">7X7</button>
+                        </div>
+                    </div>
+                    <div id="menu-functional-buttons">
+                        <button id="description">LEÍRÁS</button>
+                        <button id="start">JÁTÉK INDÍTÁSA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game-wrapper" class="wrapper">
+        <div id="game-container">
+            <div id="game-left-side">
+                <div id="logo-container"><img src="./pics/screens/title.png" alt="title" class="title-image"></div>
+                <div id="game-level-info">
+                    <p id="game-level-info-title" class="text">ÚTVONALTERVEZŐ:</p>
+                    <span id="game-level-name" class="text"></span>
+                    <br>
+                    <p id="game-level-info-time" class="text">ELTELT IDŐ:</p>
+                    <span id="game-level-time" class="text"></span>
+                </div>
+            </div>
+            <div id="game-right-side">
+                <div id="game-table-container"></div>
+            </div>
+        </div>
+    </div>
+    <div id="toplist-wrapper">
+        <button id="exit-button" class="back">VISSZA</button>
+        <div id="toplist-container">
+            <div id="toplist-title"><h2>TOP 5</h2></div>
+            <div id="toplist-item-container"></div>
+        </div>
+    </div>
+    <div id="description-wrapper" class="wrapper">
+        <button id="back-description" class="back">VISSZA</button>
+        <div id="description-container">
+            <div id="logo-container"><img src="./pics/screens/title.png" alt="title" class="title-image"></div>
+            <div id="description-text">
+                <p class="text">Nekeresdországban Nevenincs király szeretne egy körvasutat építeni, amely bejárja a birodalmának minden szegletét. A feladat megvalósítása Furfangra, az udvari tanácsosra vár, akinek a munkáját nehezíti a királyság változatos tája. Segítsünk Furfangnak megtervezni a királyság vasúthálózatához tartozó térképet!</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
